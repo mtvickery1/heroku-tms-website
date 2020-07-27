@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+import axios from 'axios'
+// const axios = require('axios');
 
 import "./contact.css"
 
@@ -153,6 +155,29 @@ class Contactus extends Component {
         }`)
 
       console.log("form sent")
+
+      var newCharacter = {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      };
+
+
+
+
+      axios.post('/send', newCharacter)
+        .then(function (response) {
+          console.log(response);
+          alert("sent email!");
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+
+
+
+
     }
 
   }
@@ -182,15 +207,13 @@ class Contactus extends Component {
             <div className='col-12 black-overlay' style={{ backgroundColor: `rgb(0, 115, 189, ${this.state.opacity})` }}>
 
               {/* Form */}
-              <MDBContainer id='contact-form-container' fluid>
+              {/* <MDBContainer id='contact-form-container' fluid>
                 <MDBRow className='justify-content-md-center' >
 
                   <MDBCol lg="6" className='p-0'>
 
-                    {/* Form BG Light */}
                     <div id='form-bg' className='pl-3 pr-3 shadow-lg'>
 
-                      {/* Form BG Dark */}
                       <div id='form-bg2' className='pl-5 pr-5 pt-5 pb-5 shadow-lg'>
                         <form id='contact-form'>
                           <p className="h5 text-center mb-4">Write to us</p>
@@ -240,10 +263,57 @@ class Contactus extends Component {
                   </MDBCol>
 
                 </MDBRow>
-              </MDBContainer>
+              </MDBContainer> */}
 
             </div>
 
+          </div>
+
+
+
+
+
+          {/* Form */}
+          <div id='contact-form' className='container-fluid'>
+            <form>
+
+
+              <div className="row justify-content-md-center">
+
+                <div className="col-md-4">
+                  <div className="md-form mb-0">
+                    <input type="text" name="name" placeholder="Your name here please" onChange={this.getName} className="form-control" />
+                    <label for="name" className=""></label>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="md-form mb-0">
+                    <input type="email" name="email" placeholder="Email address" onChange={this.getEmail} className="form-control" />
+                    <label for="email" className=""></label>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div className="row justify-content-md-center">
+
+                <div className="col-md-8">
+
+                  <div className="md-form">
+                    <textarea onChange={this.getDescription} maxLength="450" type="text" id="message" name="message" placeholder="What can we do for you?" rows="2" className="form-control md-textarea"></textarea>
+                    <label for="message"></label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div className="text-center text-md-right">
+                <button className="btn btn-info" type="submit" name="submit" value="Send" onClick={this.submitForm} >Send</button>
+              </div>
+
+            </form>
           </div>
 
 
@@ -255,57 +325,6 @@ class Contactus extends Component {
           </div>
 
 
-
-
-
-
-
-
-
-
-
-          {/* Form */}
-          {/* <div id='contact-form' className='container-fluid'>
-                    <form>
-
-
-                        <div className="row justify-content-md-center">
-
-                            <div className="col-md-4">
-                                <div className="md-form mb-0">
-                                    <input type="text" name="name" placeholder="Your name here please" onChange={this.getName} className="form-control" />
-                                    <label for="name" className=""></label>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4">
-                                <div className="md-form mb-0">
-                                    <input type="email" name="email" placeholder="Email address" onChange={this.getEmail} className="form-control" />
-                                    <label for="email" className=""></label>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div className="row justify-content-md-center">
-
-                            <div className="col-md-8">
-
-                                <div className="md-form">
-                                    <textarea onChange={this.getDescription} maxLength="450" type="text" id="message" name="message" placeholder="What can we do for you?" rows="2" className="form-control md-textarea"></textarea>
-                                    <label for="message"></label>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className="text-center text-md-right">
-                            <button className="btn btn-info" type="submit" name="submit" value="Send" onClick={this.submitForm} >Send</button>
-                        </div>
-
-                    </form>
-                </div> */}
 
         </div>
 
