@@ -1,0 +1,51 @@
+.profile-body {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.67;
+}
+
+.hector {
+  /* height: 40vh; */
+  background-color: #c2c2c2;
+  padding: 5vh 0;
+  border-top: #2F2F2F solid 2px;
+}
+.alejandro {
+  /* height: 40vh; */
+  background-color: #DCDCDC;
+  padding: 5vh 0;
+  border-top: #2F2F2F solid 2px;
+}
+#alejandro-img {
+  /* height: 40vh; */
+  background-color: #c2c2c2;
+
+}
+.alex {
+  /* height: 40vh; */
+  background-color: #c2c2c2;
+  padding: 5vh 0;
+  border-top: #2F2F2F solid 2px;
+}
+#alex-img {
+  /* height: 40vh; */
+  background-color: #DCDCDC;
+
+}
+
+.blue-bg {
+  background: #0073BD !important;
+}
+
+a {
+  color: #0073BD; 
+}
+a:hover {
+  color: #bd4200; 
+}
+
+
+/* ==================== Strategic Partnerships ==================== */
+.timeline-panel {
+  background: #c2c2c2;
+}

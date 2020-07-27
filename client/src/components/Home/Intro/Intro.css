@@ -1,0 +1,23 @@
+#intro-container {
+  /* height: 50vh; */
+  background-color: #2F2F2F;
+  border: #252525 solid 100px;
+}
+
+.intro-col {
+  padding: 25vh 0;
+}
+
+#intro-title {
+  padding: 10px;
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+#intro-body {
+  padding: 10px;
+  font-size: 48px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+}

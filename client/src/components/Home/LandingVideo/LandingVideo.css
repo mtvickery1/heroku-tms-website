@@ -1,0 +1,50 @@
+/* --------------- For Full 100vh video --------------- */
+
+/* .bg-wrapper {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    padding-top: 80vh;
+}
+
+#myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+} */
+
+/* --------------- For Full 100vh video --------------- */
+
+/* --------------- Not Fullscreen video --------------- */
+
+#myVideo {
+  width: 100%;
+  height: 100%;
+  /* max-height: 100vh; */
+  z-index: -100;
+  display: block;
+}
+
+/* --------------- Not Fullscreen video --------------- */
+
+.bg-wrapper {
+  position: relative;
+}
+
+/* #fade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(rgb(47, 47, 47, 0), rgb(47, 47, 47, 1));
+  padding-top: 30%;
+} */
+
+.landing-space{
+  padding-top: 76px;
+}

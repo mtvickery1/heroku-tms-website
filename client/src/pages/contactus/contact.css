@@ -1,0 +1,77 @@
+/* * {
+  border: red solid 1px;
+} */
+
+/* #contact-form-container {
+  background: radial-gradient(circle, #252525 60%, rgb(245, 245, 245, .1) 100%);
+
+} */
+
+/* #team {
+  width: 100vw !important;
+} */
+
+/* Contact Landing */
+#team {
+  background-image: url("../../images/warehouseteam.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  background-position: 50% 15%;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.black-overlay {
+  padding-top: 200px;
+  padding-bottom: 20vh;
+  /* height: 200vh; */
+}
+
+#form-bg {
+  background: #F5F5F5;
+  /* width: 100%; */
+  transform: skew(5deg);
+  border-radius: 100px;
+  padding: 0 100px;
+}
+
+#form-bg2 {
+  background: #2F2F2F;
+  width: 100%;
+  transform: skew(-10deg);
+  border-radius: 100px;
+}
+
+
+#contact-form {
+  transform: skew(5deg);
+  color: #F5F5F5;
+}
+
+#contact-form input, #contact-form textarea {
+  color: #F5F5F5;
+}
+
+/* #contact-form .active {
+    color: #F5F5F5;
+} */
+
+#contact-form button {
+  color: #0073BD !important;
+  border-color: #0073BD !important;
+}
+
+
+#map {
+  height: 700px;
+  width: 100vw !important;
+  padding: 0 0 0 15px;
+}
+
+/* ========================================================= */
+/* ========================================================= */

@@ -1,0 +1,24 @@
+#navbar {
+  /* background: rgb(245, 245, 245, .8) !important; */
+  background-color: rgb(47, 47, 47) !important;
+}
+#navbar-container {
+  /* background: rgb(245, 245, 245, 0); */
+  background-color: rgb(47, 47, 47);
+  box-shadow: none;
+}
+
+#navbar a {
+  color: white !important;
+}
+#navbar a:hover {
+  color: #bd4200 !important;
+}
+
+#navbar * {
+  background-color: #2F2F2F !important;
+}
+
+/* * {
+  border: red solid 1px;
+} */
