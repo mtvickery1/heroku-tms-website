@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import { Button, ButtonToolbar } from 'react-bootstrap';
 import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
+// Icons
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+
+
 
 // CSS
 import "./footer.css";
@@ -104,9 +109,15 @@ class Footer extends Component {
               {/* Social media icons */}
               <div className='row social pt-1 pb-1'>
                 <div className='col-12'>
-                  <a href="https://www.linkedin.com/company/tms-lp/" target="blank"><i className="fa fa-linkedin pr-1"></i></a>
-                  <a href="https://twitter.com/TMSolutionsLP" target="blank"><i className="fa fa-twitter"></i></a>
+
+                  {/* <a href="https://www.linkedin.com/company/tms-lp/" target="blank"><i className="fa fa-linkedin pr-1"></i></a>
+                  <a href="https://twitter.com/TMSolutionsLP" target="blank"><i className="fa fa-twitter"></i></a> */}
+
+                  <a href="https://www.linkedin.com/company/tms-lp/" target="_blank"><span><FaLinkedinIn className="pr-1"/></span></a>
+                  <a href="https://twitter.com/TMSolutionsLP" target="_blank"><span><FaTwitter /></span></a>
+
                   <a href="mailto:customerservicetms@tms-lp.com" target="blank"><i className="fa fa-envelope pl-1"></i></a>
+
                 </div>
               </div>
 

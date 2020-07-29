@@ -1,6 +1,8 @@
 /* Footer */
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* This somehow may affect the footer itself? or the icons left of links */
+/* @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); */
+
 #footer, #footer a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
@@ -36,18 +38,21 @@
   /* font-weight:700; */
 }
 
-#footer a i {
+/* Icons */
+#footer a i,
+#footer a span svg {
   -webkit-transition: .5s all ease;
   -moz-transition: .5s all ease;
   transition: .5s all ease;
 }
-
-#footer div.social a:hover i {
+#footer div.social a:hover i,
+#footer div.social a:hover span svg {
   font-size: 30px;
   margin-top: -10px;
-  color: #0073BD;
+  color: #bd4200;
 }
 
+/* Links */
 #footer div#links a:hover i {
   /* font-size: 30px; */
   /* margin-top:-10px; */
